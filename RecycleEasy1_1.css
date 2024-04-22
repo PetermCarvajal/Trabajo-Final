@@ -1,0 +1,393 @@
+/* ? Como no me enviarion Un Ico sin fono y Sin letras pues deje ese , Les Gusta */
+/* *  Esto Controla Todo El Documento En General*/
+*{
+    margin:0;
+    left:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-color:#FFFFFF;
+    overflow-x: hidden;
+}
+
+/* Esto Controla La Cabeza del domumento Ocultando la Barra Vertical y Fiajndola */
+header{
+    overflow-y: hidden;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:8.2em;
+    background-color:rgb(26, 172,26);
+    box-shadow: 0,4,25px,-22px,#000000;
+    z-index:2;
+}
+
+/*  De aqui en adelante es lo ue contiene el header */
+.Header-Content{
+    max-width:1080px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    font-family:"BlinkMacSystemFont","Bliker","system-ui", 'Segoe UI', "Roboto","Oxygen","Ubuntu","Cantarell", 'Open Sans', 'Helvetica Neue', "sans-serif","-apple-system";
+}
+
+/* Esta es la imagen del titulo */
+.Icono{
+display: flex;
+justify-content:center;
+align-items:center;
+position:relative;
+bottom: 1em;
+}
+.Logo{
+    display:flex;
+    height:7em;
+    position: relative;
+    left:-13.1em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.Logo h1 b{
+    color: #FFFFFF;
+    position: relative;
+  
+}
+
+
+.Logo h1 strong{
+    color:rgba(162,239,77,255);
+    position: relative;
+
+}
+.Menu{
+    height:7em;    
+}
+.Menu nav{
+    height:100%;
+}
+.Menu nav ul{
+    height:100%;
+    display:flex;
+    list-style:none;
+}
+.Menu nav ul li{
+    overflow-y: hidden;
+    height:100%;
+    margin:0px 0.3em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Menu-Seleccionado:before, .Menu-Seleccionado:after {
+    content: '';
+    width: 100%;
+    height: 0.2em;
+    background-color: #FFFFFF;
+    position: absolute;
+    transition: all 2s ease-in-out;
+}
+
+.Menu-Seleccionado:before {
+    top: -2em;
+}
+
+.Menu-Seleccionado:after {
+    bottom: -2em;
+}
+
+.Menu-Seleccionado:hover:before {
+    top: 2.8em;
+
+}
+#Texto-Menu-Seleccionado:hover{
+    text-transform: uppercase;
+}
+.Menu-Seleccionado:hover:after {
+    bottom: 2.6em;
+}
+.Encontrar-Contenedor{
+    display: flex;
+    position: relative;
+    left:13.8em;
+    top: 9em;
+}
+.Encontrar-Contenedor span{
+position: relative;
+left:1em;
+}
+.Mapa{
+ justify-content: center;
+ display: flex;
+ align-items: center;
+ position: relative;
+ top:10em;
+}
+
+.Menu nav ul li a{
+    color:#12FF00;
+    transition:color 5000ms;
+}
+
+
+.Menu nav ul li a:hover{
+    color:rgb(255,255,255);
+    transition:color 1000ms;
+    border-color: #FFFFFF;
+
+}
+.Menu .Texto-Menu-Seleccionado{
+    color: #000;
+}
+.Menu .Texto-Menu-Seleccionado1{
+    color:rgb(000,000,000);
+}
+.Menu .Texto-Menu-Seleccionado2{
+    color:rgb(0,0,0);
+}
+
+#Espacio-Publicitario{
+    width:2em;
+    height: 10em;
+    border-left-color: #000;
+    border-top: #000;
+    border-right-color: #000;
+    border-bottom-color: #000;
+    position: relative;
+    left:0;
+    display:flex;
+    z-index: 3;
+}
+
+/* Fuente */
+.blinker-thin {
+    font-family: "Blinker", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .blinker-extralight {
+    font-family: "Blinker", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .blinker-light {
+    font-family: "Blinker", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .blinker-regular {
+    font-family: "Blinker", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .blinker-semibold {
+    font-family: "Blinker", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .blinker-bold {
+    font-family: "Blinker", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .blinker-extrabold {
+    font-family: "Blinker", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .blinker-black {
+    font-family: "Blinker", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+/* 
+    margin:0;
+    left:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-color:#FFFFFF;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:7em;
+    background-color:rgb(26, 172,26);
+    box-shadow: 0,4,25px,-22px,#000000;
+    z-index:2;
+}
+.Header-Content{
+    max-width:640px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    font-family:"BlinkMacSystemFont","Bliker","system-ui", 'Segoe UI', "Roboto","Oxygen","Ubuntu","Cantarell", 'Open Sans', 'Helvetica Neue', "sans-serif","-apple-system";
+}
+
+.Logo{
+    height:7em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.Logo h1 b{
+    color: #FFFFFF;
+}
+.Logo h1 strong{
+    color:rgba(162,239,77,255);
+}
+.Menu{
+    height:7em;    
+}
+.Menu nav{
+    height:100%;
+}
+.Menu nav ul{
+    height:100%;
+    display:flex;
+    list-style:none;
+}
+.Menu nav ul li{
+    height:100%;
+    margin:0px 0.09em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Menu-Seleccionado:before{
+    content:'';
+    width: 100%;
+    height: 0.2em;
+    background-color:#FFFFFF;
+    transition-behavior:inherit;
+    position:relative;
+    top:0m;
+    left:0;
+    text-transform: uppercase;
+    cursor:pointer;
+    animation-name:Arriba-Abajo;
+    animation-duration:2s;
+    }
+.Menu-Seleccionado:hover{
+content:'';
+ width: 100%;
+ height: 0.2em;
+ background-color:#FFFFFF;
+ transition-behavior:inherit;
+ position:absolute;
+ transition-delay:2s;
+ text-transform: uppercase;
+ animation:change 10s forwards;
+ top:2.8em;
+ left:0;
+}
+@keyframes Arriba-Abajo{
+0%{bottom:0;}
+10%{bottom:0.3em;}
+20%{bottom:0.6em;}
+30%{bottom:0.9em;}
+40%{bottom:1.2em;}
+50%{bottom:1.5em;}
+60%{bottom:1.8em;}
+70%{bottom:2.1em;}
+80%{bottom:2.4em;}
+100%{bottom:2.8em;}
+}
+.Menu nav ul li a{
+    color:#12FF00;
+    transition:color 5000ms;
+}
+.Menu #Texto-Menu-Seleccionado:hover:before{
+content:'';
+width:100%;
+height:0.2em;
+background-color: #fff;
+position:absolute;
+top:4.3em;
+left:0;
+}
+
+/* ! 0,255,0  162,239,7,255 12FF00 */
+/*
+.Menu nav ul li a:hover{
+    color:rgb(255,255,255);
+    transition:color 1000ms;
+    border-color: #FFFFFF;
+
+}
+.Menu .Texto-Menu-Seleccionado{
+    color: #000;
+}
+.Menu .Texto-Menu-Seleccionado1{
+    color:rgb(000,000,000);
+}
+.Menu .Texto-Menu-Seleccionado2{
+    color:rgb(0,0,0);
+}
+
+.blinker-thin {
+    font-family: "Blinker", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .blinker-extralight {
+    font-family: "Blinker", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .blinker-light {
+    font-family: "Blinker", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .blinker-regular {
+    font-family: "Blinker", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .blinker-semibold {
+    font-family: "Blinker", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .blinker-bold {
+    font-family: "Blinker", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .blinker-extrabold {
+    font-family: "Blinker", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .blinker-black {
+    font-family: "Blinker", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  */
